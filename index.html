@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a6bc769f87.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+<nav>
+    <img src="weather-app-img/images/mishita (2).png" class="logo" alt="">
+<ul id="sidemenu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#Feedback">Feedback Form</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+</ul>
+<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+</nav>
+<div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h2>Welcome to Weatherify</h2>
+      <p>Thank you for visiting Weatherify,your premier destination for comprehensive and up-to-date weather information. Its an honour to serve you! </p>
+    </div>
+  </div>
+<div class="header-text">
+   
+    <h1>REAL TIME WEATHER WEBSITE</h1>
+    <h2>Built by Mishita</h2>
+</div>
+        </div>
+    </div>
+
+
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <button><img src="weather-app-img/images/search.png"></button>
+        </div>
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+        <div class="weather">
+            <img src="weather-app-img/images/rain.png" class="weather-icon">
+            <h1 class="temp">
+                22°C
+            </h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="weather-app-img/images/humidity.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="weather-app-img/images/wind.png">
+                    <div>
+                        <p class="wind">15 Km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+         <div class="row">
+             <div class="about-col-1">
+                 <img src="weather-app-img/images/monitor-1307227_640.jpg" alt="">
+             </div>
+             <div class="about-col-2">
+                 <h1 class="subtitles">About </h1>
+                 <p>Welcome to Weatherify, your premier destination for comprehensive and up-to-date weather information. We understand the vital role that weather plays in our everyday lives, from planning outdoor activities to making important decisions about travel, safety, and more. That's why we're dedicated to providing you with the most accurate, reliable, and user-friendly weather data available.
+
+                    Our website is designed with your needs in mind, whether you're a casual user looking for a quick weather check or a weather enthusiast seeking in-depth meteorological data.</p>
+                 <div>
+                     <p class="title">Our Features</p>
+ <ul>
+    <li><span style="color: #05f8f8; padding-top: 30px;">Real-Time Weather Data:</li>
+    <li><span style="color: #05f8f8; padding-top: 30px;">Precise Forecasts:</li>
+    <li><span style="color: #05f8f8; padding-top: 30px;"> Location-Based Services:</li>
+    <li><span style="color: #05f8f8; padding-top: 30px;">Weather-Alerts</li>
+</ul>
+                 </div>
+             </div>
+         </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+               
+             
+        <h1 class="subtitles">
+            Contact Us
+        </h1>
+        <div class="social-icons">
+           <a href="#"><i class="fa-brands fa-facebook"></i></a> 
+           <a href="#"><i class="fa-brands fa-instagram"></i></a> 
+           <a href="#"><i class="fa-brands fa-twitter"></i></a> 
+           <a href="#"><i class="fa-brands fa-linkedin"></i></a> 
+        </div>
+       </div>
+       </div>
+    
+             <div id="Feedback" class="container">
+                    <h1 class="subtitles">
+                      Feedback From
+                    </h1>
+        <form>
+            <input type="text" name="Name" placeholder="Your Name">
+            <input type="email" name="Email" placeholder="Your Email">
+            <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+                </div>
+               
+        <footer>
+            <div class="center">
+                Copyright &copy; Weatherify. All rights reserved.
+            </div>
+        </footer> 
+    
+</body>
+
+<script src="./index.js"></script>
+</html> 
